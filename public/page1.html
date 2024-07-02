@@ -1,0 +1,157 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="icon" type="image/svg" href="flight.f515b25a.svg">
+</head>
+    <div>
+     <style>  
+       body{
+            background-image:url("blog-flight-tracker1-Adobe_Stock_Artur_Grom.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            text-align: center;
+       }
+        </style>
+    </div>
+<body>
+    <form style="font-size:larger" action="http://localhost:5500/api/flight">
+        <label> Origin city/airport code: </label>
+        <input id="origin" type="text" required><br><br>
+        <label> Destination city/airport code :</label>
+        <input id="destination" type="text" required><br><br>
+        <label> Date: </label>
+        <input id="date" type="date" required><br><br>
+        <label> Traveller:</label>
+        <select id="traveller">
+        <option> Adult(12 yr or above)</option>
+        <option> Children(2-12 yr)</option>
+        <option> Infant(0-2 yr)</option>
+        </select>
+        <input type="number" min="1" placeholder="Number of traveller" required><br><br>
+        <label>Class:</label>
+        <input type="text" style="text-align: center; font-size: small;" value="Economy" readonly><br><br>
+        <button style="font-size: medium; background-color:aqua;">Search Flights</button>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
+-->
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="icon" type="image/svg" href="flight.f515b25a.svg">
+    <style>
+        body {
+            background-image: url("blog-flight-tracker1-Adobe_Stock_Artur_Grom.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            text-align: center;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <form id="flightForm" style="font-size: larger">
+        <label> Origin city/airport code: </label>
+        <input id="origin" type="text" required><br><br>
+        <label> Destination city/airport code :</label>
+        <input id="destination" type="text" required><br><br>
+        <label> Date: </label>
+        <input id="date" type="date" required><br><br>
+        <label> Traveller:</label>
+        <select id="traveller">
+        <option> Adult(12 yr or above)</option>
+        <option> Children(2-12 yr)</option>
+        <option> Infant(0-2 yr)</option>
+        </select>
+        <input type="number" min="1" placeholder="Number of traveller" required><br><br>
+        <label>Class:</label>
+        <input type="text" style="text-align: center; font-size: small;" value="Economy" readonly><br><br>
+        <button style="font-size: medium; background-color:aqua;">Search Flights</button>
+    </form>
+
+    <script>
+        //document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('date').min = new Date().toISOString().split("T")[0];
+       // });
+    </script>
+
+    <div id="flightsContainer">
+         Flight results will be displayed here 
+        
+    </div>
+
+    <script src="index.js"></script>  Include additional frontend JS for form submission
+
+
+   
+
+</body>
+</html>
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="icon" type="image/svg+xml" href="flight.f515b25a.svg">
+    <style>
+        body {
+            background-image: url("blog-flight-tracker1-Adobe_Stock_Artur_Grom copy.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="flightForm" style="font-size: larger">
+        <label> Origin city/airport code: </label>
+        <input id="origin" type="text" required><br><br>
+        <label> Destination city/airport code :</label>
+        <input id="destination" type="text" required><br><br>
+        <label> Date: </label>
+        <input id="date" type="date" required><br><br>
+        <label> Traveller:</label>
+        <select id="traveller">
+            <option> Adult (12 yr or above)</option>
+            <option> Children (2-12 yr)</option>
+            <option> Infant (0-2 yr)</option>
+        </select>
+        <input type="number" min="1" placeholder="Number of traveller" required><br><br>
+        <label> Class: </label>
+        <input type="text" style="text-align: center; font-size: small;" value="Economy" readonly><br><br>
+        <button type="submit" style="font-size: medium; background-color: aqua;">Search Flights</button>
+    </form>
+
+   
+    <div id="flightsContainer">
+        <!-- Flight results will be displayed here -->
+    </div>
+
+    <script src="index.js"></script>  <!--Include the frontend JS for form submission -->
+
+</body>
+</html>

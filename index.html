@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="icon" type="image/svg" href="flight.f515b25a.svg">
+</head>
+<div>
+<style>
+   body{
+        text-align:center
+    }
+    </style>
+</div>
+<body>
+    <h1>WELCOME</h1>
+    <h2>Enter the following details for booking flights</h2>
+    <form action="http://localhost:5500/page1.html">
+    <label for="name">Name:</label>
+    <input type="text" id="username" required> <br><br>
+    <label for="email">Email</label>
+    <input type="text" id="email" placeholder="abcd@gmail.com" required> <br><br>
+    <label for="phone number">Phone number:</label>
+    <input type="tel" id="Phone number" pattern= "[0-9]{4}-[0-9]{2}-[0-9]{4}" placeholder="1234-56-7890" required> <br><br>
+    <button id="submit-btn">Submit</button>
+</form>
+<!--<script src="index.js"></script>-->
+</body>
+</html>
